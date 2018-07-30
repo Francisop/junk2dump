@@ -23,9 +23,9 @@ public class SessionUtils {
         
     }
     
-    public static String getUsername(){
+    public static String getEmail(){
         HttpSession hs = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
-        return  hs.getAttribute("username").toString();
+        return  hs.getAttribute("email").toString();
     }
     
     public static String getUserId(){

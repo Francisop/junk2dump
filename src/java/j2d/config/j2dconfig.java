@@ -17,5 +17,5 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan(basePackages = "j2d")
 public class j2dconfig {
-    
+
 }
