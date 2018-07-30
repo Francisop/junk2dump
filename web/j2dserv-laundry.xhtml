@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>J2D-LAUNDRY</title>
+        <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+                    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"></link>
+
+                        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+                        <script type="text/javascript" src="js/bootstrap.js"></script>
+                        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<h:outputStylesheet library="css" name="laundrystyle.css"/>
+<h:outputScript library="js" name="laundryscript.js"/>
+
+	
+		
+	
+
+        
+        
+        
+        
+    </h:head>
+    
+    
+    <h:body style="background-color: aliceblue">
+      
+<div class="container-fluid">
+
+<header>
+<div id="hd">
+	<div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style=" color: lightgreen;">just one call and your junk  disappears...like magic</h4></div>
+	
+	<ul style="display: inline" class="list-inline"  id="nav">
+	  <li><a href="index.xhtml">Home</a></li>
+	  <li><a href="j2dshop.xhtml">J2dshop</a></li>
+	<li><a href="j2dtips.xhtml">J2dTips</a></li>
+	<div class="dropdownMB" style="padding-left: 43px">
+			<li class="dropMB"  style="background-color: cadetblue">Our Services</li>
+			<div class="dropdown-contentMB dropdown-header">
+			<ul style="line-height: 19px;">
+				<li><a href="j2dserv-laundry.xhtml"  style="background-color: cadetblue">Laundry and dry cleaning Services</a></li><br/>
+				<li><a href="waste and janitor.xhtml">Waste Disposal and janitorial Serviices</a></li><br/>
+				<li><a href="fumigate and pest.xhtml">Fumigation and Pest Control</a></li><br/>
+				<li><a href="#">Integrated Facilities Management</a></li><br/>
+				<li><a href="#">Landscape Maintenance</a></li><br/>
+				<li><a href="#">Equipment/Trucks/compactor Leasing </a></li><br/>
+			</ul>
+			</div>
+			</div>
+	
+            <li class="dropMB"><a href="j2dserv-laundry.xhtml">Check myClothes  </a>|</li>
+	
+
+            <li><a href="j2dregister.xhtml">Sign in  |</a></li>
+	<li><a href="j2dHelp.xhtml">Help</a></li>	
+	
+	</ul>
+		
+</div>
+</header>
+
+
+<section>
+	<div class="container">
+	<div class="jumbotron" style="background-color:darkred">
+		<h2 style="color: black">Our Deluxe Laundry Service<span class="glyphicon glyphicon-align-center"></span></h2>
+	
+                <h:graphicImage library="images" name="jlaundry.jpg" width="100%"/>
+	<h2 style="color: black"><u>Professional Dry cleaning  </u></h2>
+	<h4  style="color: aliceblue">
+	Our professional team at J2D Deluxe Laundry takes the timeto clean and finish all your garments so they are ready to wear.<br/>
+	We pay special attention to detail by making sure your clothes are returned fresh and clean smelling.
+	</h4><br/>
+	
+		<h2 style="color: black"><u>Spot removal</u></h2>
+	<h4  style="color: aliceblue" >
+	At J2D Deluxe Laundry we will have your favorite garments looking like new again.<br/>
+	Our Expert team has been trained in the latest techniques for stain removal.
+	</h4><br/>
+	
+	<h2  style="color: black"><u>Other Items</u></h2>
+	<h4  style="color: aliceblue">
+	We gladly take care of Beddings,Tablecloths,Linens as well as any item that may need either general or dry cleaning. 
+	</h4><br/>
+	
+	<h2 style="color: black"><u>Expert Tailoring</u></h2>	
+	<h4 style="color: aliceblue">
+		Expert tailoring are Available for all your repair and alteration needs.
+	</h4><br/>
+	
+	<h2 style="color: black"><u>Free pickup and Delivery</u></h2>		
+	<h4 style="color: aliceblue">
+		Choose your Pick up day and time as well as how often you'd like us to come pick up your clothes.<br/>
+		Delivery days and times vary by location.
+    </h4><br/>
+	
+	<h2 style="color: black"><u>New Customer</u></h2>	
+	<h4  style="color: aliceblue">
+	AS a first time customer we welcome you with special pricing and discounts.
+	</h4>
+	</div>
+	</div>
+</section>
+
+	
+<section>
+    
+    <div style="background-image: url('back1.png'); background-repeat: no-repeat; width: 60%">
+        <h2>Check your clothes here</h2>
+        <form style="margin-top: 95px; background-color: aliceblue;">
+            
+            
+            <div id="forms">
+            <h:outputLabel>Email :</h:outputLabel><input type="email" value="#{logBean.email}" /><br/><br/>
+            <h:outputLabel>Password :</h:outputLabel><input type="password" value="#{logBean.password}"/><br/><br/> 
+            
+            <h:commandButton id="chg" value="Check clothes" action="#{logBean.login()}"/>
+            <h2 id="no-forms"></h2>
+            </div>
+        </form>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        
+    </div>
+	</section>
+
+
+
+
+	</div>
+    </h:body>
+</html>
+

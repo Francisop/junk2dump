@@ -1,85 +1,60 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home</title>
-<link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+                    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"></link>
 
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.js"></script>
-	<script src="jquery-1.11.3.min.js"></script>
-	<script type="text/javascript">
-	
-	</script>
-		<style type="text/css">
-		#hd>#logo {
-			text-align: center;
-		background:hsla(113,36%,14%,1.00);
-			
-		}
-		#hd > #nav > li{
-			margin-left: 70px;
-			font-size: 16px;
-			text-align: center;
-		}
-		#hd {
-			background-color: slategray;
-		}
-		#newsletter>form{
-			float: right;
-			margin-top: -42px;
-			margin-right: 90px;
-		}
-		#newsletter input[type="button"]{
-			margin-left: 214px;
-			float: right;
-			margin-top: -11.5%;
-			height: 34px;
-			border-radius: 6px;
-		}
-			
-		#newsletter{
-		background:hsla(113,36%,14%,1.00);
-		padding: 2px;
-		}
-		
-			footer{
-		padding: 20px;
-		margin-top: 20px;
-		color: aliceblue;
-		background:hsla(113,36%,14%,1.00);
-		text-align: center;
-	}
-	</style>
+                       
+                        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+ <h:outputScript library="js" name="homescript.js"/>
+ <h:outputStylesheet library="css" name="homestyle.css"/>
+        
     </h:head>
     <h:body>
-        <div class="container-fluid">
-
+<div class="container-fluid">
+   
 <header>
 <div id="hd">
-	<div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style="font: italic; color: lightgreen;">just one call and your junk  disappears...like magic</h4></div>
+	<div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style="color: lightgreen;">just one call and your junk  disappears...like magic</h4></div>
 	
-	<ul class="list-inline" id="nav">
-	  <li style="color: darkgreen">Home</li>
-	  <li>J2dshop</li>
-	<li>J2dTips</li>
-	<li>Services</li>
-	<li>Check myClothes  |</li>
-	<li>Sign in  |</li>
-	<li>Help</li>	
+	<ul style="display: inline" class="list-inline"  id="nav">
+	  <li style="background-color: cadetblue"><a href="index.xhtml">Home</a></li>
+	  <li><a href="j2dshop.xhtml">J2dshop</a></li>
+	<li><a href="j2dtips.xhtml">J2dTips</a></li>
+	<div class="dropdownMB" style="padding-left: 43px">
+			<li class="dropMB">Our Services</li>
+			<div class="dropdown-contentMB dropdown-header">
+			<ul style="line-height: 19px;">
+				<li><a href="j2dserv-laundry.xhtml">Laundry and dry cleaning Services</a></li><br/>
+				<li><a href="waste and janitor.xhtml">Waste Disposal and janitorial Serviices</a></li><br/>
+				<li><a href="fumigate and pest.xhtml">Fumigation and Pest Control</a></li><br/>
+				<li><a href="#">Integrated Facilities Management</a></li><br/>
+				<li><a href="#">Landscape Maintenance</a></li><br/>
+				<li><a href="#">Equipment/Trucks/compactor Leasing </a></li><br/>
+			</ul>
+			</div>
+			</div>
+	
+	<li class="dropMB"><a href="j2dserv-laundry.xhtml">Check myClothes  </a>|</li>  
+	<li><a href="j2dregister.xhtml">Sign in  |</a></li>
+	<li><a href="j2dHelp.xhtml">Help</a></li>	
+	
 	</ul>
-	
+		
 </div>
 </header>
 
-
+ <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.js"></script>
 <section>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
+  <!-- Indicators --> 
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -90,29 +65,30 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="clean2D.png"  class="center-block">
+        
+        <h:graphicImage library="images" name="welcome.png" alt="tissue" class="center-block" width="100%"/>
       <div class="carousel-caption">
-        <h3>Chania</h3>
+        <h2></h2>
       </div>
     </div>
 
     <div class="item">
-      <img src="fumigation.jpg"    class="center-block" style="align-content: center" alt="Chania">
+        <h:graphicImage library="image" name="prod.jpg" alt="ladder" class="center-block"/>
       <div class="carousel-caption">
-        <h3>Chania</h3>
+        <h2>Shop till you drop</h2>
         
       </div>
     </div>
 
     <div class="item">
-      <img src="waste.png" alt="Flower"  class="center-block">
+      <h:graphicImage library="image" name="fumigator.jpg" alt="ladder" class="center-block"/>
       <div class="carousel-caption">
-        <h3>Flowers</h3>
+        <h2>Pests wont survive when Junk2dump Arrives</h2>
       </div>
     </div>
 
     <div class="item">
-      <img src="h.jpg" width="134" alt="Flower"  class="center-block">
+     <h:graphicImage library="image" name="waste.png" alt="waste" class="center-block"/>
       <div class="carousel-caption">
         <h3>Flowers</h3>
       </div>
@@ -128,24 +104,255 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  
 </div>
 </section>
 
 <section>
 <div id="newsletter">
-	<h2>Subscribe to our Newsletter</h2>
+	<h2 style="color: royalblue">Subscribe to our Newsletter</h2>
 	<form role="form">
-		<input type="email" class="form-control"  placeholder="E-mail" id="mail" style="width: 213px"> <input type="button" id="btn" value="Subscribe">
+		<input type="email" class="form-control"  placeholder="E-mail" id="mail" style="width: 213px"></input> <input type="button" id="btn" value="Subscribe"></input>
 	
 	</form>
 </div>
 </section>
 
 
+<section>
+	<div style="background-color: aliceblue; height: 437px">
+		<div class="col-sm-3" style="background-color: cornflowerblue">
+	
+			<h6><strong> We fumigate to eliminate</strong><span class="fa fa-bug"></span></h6>
+	<p><pre style="background-color: lightgray; font-size: 15px">
+	We come to you
+	free delivery to 
+	your home or 
+	office.Have a
+	busy schedule?
+	Thers no lugging
+	of heavy laundry
+	back and forth or
+	anyWhere for that
+	matter.we pickup and
+	deliver right to
+	you on schedule.
+	</pre></p>
+                        <u><a href="">try our FumigationServices</a></u>		
+
+	</div><br/>
+	
+	<div class="col-sm-3" style="background-color: darkred">
+	
+	<h6 style="color: black"><strong>Laundry on the Move<span class="fa fa-truck"></span></strong></h6>
+	<p><pre style="background-color: lightgray; font-size: 15px">
+	We come to you
+	free delivery to 
+	your home or 
+	office.Have a
+	busy schedule?
+	Thers no lugging
+	of heavy laundry
+	back and forth or
+	anyWhere for that
+	matter.we pickup and 
+	deliver right to
+	you on schedule.
+	</pre></p>
+	<u><a href="j2dserv-laundry.xhtml">try our LaundryServices</a></u>	
+	</div><br/>
+	
+		<div class="col-sm-3" style="background-color:  darksalmon">
+	
+	<h6><strong>ClEANLINESS is GODLINESS<span class="fa fa"></span></strong></h6>
+	<p><pre style="background-color: lightgray; font-size: 15px">
+	our cleaning service
+	always uphold the
+	industries standard
+	of health,hygiene 
+	and environment.Our
+	commitment to the 
+	use of chemicals
+	ensures safety and 
+	longivity of your 
+	propertyand provides
+	protection against 
+	health hazards.
+	</pre></p>
+	<u><a href="#">try our CleaningServices</a></u>		
+	</div><br/>
+	
+		<div class="col-sm-3" style="background-color:  khaki">
+	
+	<h6><strong>Shop till you Drop<span class="fa fa-shopping-basket"></span></strong></h6>
+	<p><pre style="background-color: lightgray; font-size: 15px">
+    Our products are
+    Eco-friendly 
+    safe and Easy
+    to use.Whether is
+    cleaning,wasshing
+    or fumigating
+    our products
+    makes it easy,
+    fast,fun and 
+    most of all,
+    gives you the 
+    required result. 
+	</pre></p>	
+        
+		<u><a href="j2dshop.Xhtml">try our Products</a></u>		
+
+	</div>
+	
+	</div>
+</section>
+
+<div class="col-sm-12 col-lg-12 col-md-3 col-xs-3" style="border-top: groove; border-bottom: groove;">
+
+<h2 style="text-align: center;"><u><strong>Free Estimates done here<span class="fa fa-arrow-down"></span></strong></u></h2><br/>
+<form class="form-group" style="border: none">
+	<select id="choose" style="margin-left: 533px; background-color: darkseagreen">
+		<option>Category</option>
+		<option value="lds">Laundry Service</option>
+		<option value="cls">Cleaning Service</option>
+		<option value="pc">Pest Control</option>
+	</select>
+	
+	<div id="clean" class="col-sm-3" style="float: right">
+		<label>Building type:</label><select>
+		  <option>Bongalow</option>
+		  <option>Duplex</option>
+		  <option>Duplex with boys quaters</option>
+		  <option>flat</option>
+		  <option>Office space</option>
+		</select><br/><br/><br/>      
+			
+		
+	<label>Number of rooms:</label><input id="romnum" type="number"/><br></br><br></br>
+	
+	<p id="price"></p>
+	 <input value="Estimate" id="bn" type="button" style="background-color: darksalmon"></input>
 	
 
+	</div>	
+		
+		
+<div id="laund" class="col-sm-3" style ="float: right;margin-right:3px; display:inline; text-align: center;width: 723px; background-color: aliceblue; border-left: groove;">
+
 	
-	<footer>Junk2Dump, Copyright&copy;2018</footer>
+	<label>Shirts:</label><input name="shirt" type="checkbox"/>
+	<div id="sht">
+	<input type="number" placeholder="No. of Shirts" style="width: 100px; height: 20px; background-color: aliceblue; border-top: none;"></input>
+	<select>
+		<option>Folded</option>
+		<option>Hanged</option>
+	</select>
+	<label title="Express services take a mininmum of 2days">Express</label><input type="checkbox"/>
+	<label>Starch:</label><select><option>none</option><option>Lightly</option><option>heavily</option></select>
+	</div><br></br>
+	
+	
+	<label>T-shirt:</label><input name="tshirt" type="checkbox"/>
+	<div id="tsht">
+	<input type="number" placeholder="No. of Tshirt" style="width: 100px; height: 20px; background-color: aliceblue; border-top: none;"></input>
+	<select>
+		<option>Folded</option>
+		<option>Hanged</option>
+	</select>
+	<label title="Express services take a mininmum of 2days">Express</label><input type="checkbox"/>
+	<label>Starch:</label><select><option>none</option><option>Lightly</option><option>heavily</option></select>
+        </div><br></br>
+	
+	
+	<label>Trouser:</label><input name="trouser" type="checkbox"/>
+	<div id="trs">
+	<input type="number" placeholder="No. of trouser" style="width: 110px; height: 20px; background-color: aliceblue; border-top: none;"></input>
+	<select>
+		<option>Folded</option>
+		<option>Hanged</option>
+	</select>
+	<label title="Express services take a mininmum of 2days">Express</label><input type="checkbox"/>
+	<label>Starch:</label><select><option>none</option><option>Lightly</option><option>heavily</option></select>
+	</div><br></br>
+	
+	
+	<label>Jacket/blazer:</label><input name="jacket" type="checkbox"/>
+	<div id="jtbl">
+	<input type="number"  id="clothnum" placeholder="No. of Jacket/blazer" style="width: 100px; height: 20px; background-color: aliceblue; border-top: none;"></input>
+	<select>
+		<option>Folded</option>
+		<option>Hanged</option>
+	</select>
+	<label title="Express services take a mininmum of 2days">Express</label><input id="exp" type="checkbox"/>
+	<label>Starch:</label><select><option>none</option><option>Lightly</option><option>heavily</option></select>
+	</div><br></br>
+	
+	
+	<label>Bedsheet-large:</label><input name="bedsh-lg" type="checkbox"/>
+	<div id="btl">
+	<input type="number" placeholder="No. of Bedsheet-large" style="width: 100px; height: 20px; background-color: aliceblue; border-top: none;"/>
+	<select>
+		<option>Folded</option>
+		<option>Hanged</option>
+	</select>
+	<label title="Express services take a mininmum of 2days">Express</label><input type="checkbox"/>
+	<label>Starch:</label><select><option>none</option><option>Lightly</option><option>heavily</option></select>
+	</div><br></br>
+	
+	
+	<label>Bedsheet-small:</label><input name="bedsh-sm" type="checkbox"/>
+	<div id="bts">
+	<input type="number" placeholder="No. of Bedsheet-small" style="width: 100px; height: 20px; background-color: aliceblue; border-top: none;"></input>
+	<select>
+		<option>Folded</option>
+		<option>Hanged</option>
+	</select>
+	<label title="Express services take a mininmum of 2days">Express</label><input type="checkbox"/>
+	<label>Starch:</label><select><option>none</option><option>Lightly</option><option>heavily</option></select>
+	</div><br></br>
+	
+	
+	<label>Towel:</label><input name="towel" type="checkbox"/>
+	<div id="twl">
+	<input type="number" placeholder="No. of towels" style="width: 100px; height: 20px; background-color: aliceblue; border-top: none;"></input>
+	<select>
+		<option>Folded</option>
+		<option>Hanged</option>
+	</select>
+	<label title="Express services take a mininmum of 2days">Express</label><input type="checkbox"/>
+	<label>Starch:</label><select><option>none</option><option>Lightly</option><option>heavily</option></select>
+	</div><br></br>
+	
+	
+	<p id="prc"></p>
+ <input id="est" type="button" style="float: right; background-color: lightgreen; border: none" value="Estimate"></input>
+	
+</div>
+ 
+ 
+ 
+ <div id="fumi" class="col-sm-3" style="float: right">
+ 	<label>Building type:</label><select>
+		  <option>Bongalow</option>
+		  <option>Duplex</option>
+		  <option>Duplex with boys quaters</option>
+		  <option>flat</option>
+		  <option>Office space</option>
+		</select><br/><br/><br/>
+		
+	
+                <p id="fumiprice"></p>
+               <input type="number" id="numrom" placeholder="No. of rooms" style="width: 109px"/><br></br><br></br> 
+                
+                <input  id="fbn" type="button" value="Estimate" style="background-color: cadetblue"></input>
+	
+ </div>
+	</form>	
+	
+
+</div>	
+
+<footer>Junk2Dump, Copyright&copy;2018</footer>
 
 </div>
     </h:body>

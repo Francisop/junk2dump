@@ -10,71 +10,47 @@
         <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
 
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="jquery-1.11.3.min.js"></script>
-        <script type="text/javascript">
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <h:outputScript library="js" name="shopscript.js"/>
+        <h:outputStylesheet library="css" name="shopstyle.css"/>               
 
-        </script>
-
-        <style type="text/css">
-            #hd>#logo {
-                text-align: center;
-                background:hsla(113,36%,14%,1.00);
-
-            }
-            #hd > #nav > li{
-                margin-left: 70px;
-                font-size: 16px;
-                text-align: center;
-            }
-            #hd > #nav > li:hover{
-                background-color: darkgreen;
-
-            }
-            #hd {
-                background-color: aliceblue;
-            }.col-sm-3:hover{
-
-                border:double;
-
-            }
-            #Category{
-                border: none;
-                width: 62px;
-                background-color:slategray; 
-            }
-            
-
-            footer{
-                padding: 20px;
-                margin-top: 20px;
-                color: aliceblue;
-                background:hsla(113,36%,14%,1.00);
-                text-align: center;
-            }
-        </style>
+       
+        
     </h:head>
+    
     <h:body>
         <div class="container-fluid">
 
-            <header>
-                <div id="hd">
-                    <div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style="font:italic; color: lightgreen;">just one call and your junk  disappears...like magic</h4></div>
+          <header>
+<div id="hd">
+	<div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style="color: lightgreen;">just one call and your junk  disappears...like magic</h4></div>
+	
+	<ul style="display: inline" class="list-inline"  id="nav">
+	  <li><a href="index.xhtml">Home</a></li>
+	  <li style="background-color: cadetblue"><a href="j2dshop.xhtml">J2dshop</a></li>
+	<li><a href="j2dtips.xhtml">J2dTips</a></li>
+	<div class="dropdownMB" style="padding-left: 43px">
+			<li class="dropMB">Our Services</li>
+			<div class="dropdown-contentMB dropdown-header">
+			<ul style="line-height: 19px;">
+				<li><a href="j2dserv-laundry.xhtml">Laundry and dry cleaning Services</a></li><br/>
+				<li><a href="waste and janitor.xhtml">Waste Disposal and janitorial Serviices</a></li><br/>
+				<li><a href="fumigate and pest.xhtml">Fumigation and Pest Control</a></li><br/>
+				<li><a href="#">Integrated Facilities Management</a></li><br/>
+				<li><a href="#">Landscape Maintenance</a></li><br/>
+				<li><a href="#">Equipment/Trucks/compactor Leasing </a></li><br/>
+			</ul>
+			</div>
+			</div>
+	
+        <li class="dropMB"><a href="j2dserv-laundry.xhtml">Check myClothes  </a>|</li>
 
-
-
-                    <ul class="list-inline"  id="nav">
-
-                        <li><h:commandLink action="index.xhtml">Home</h:commandLink></li>
-                        <li style="color: darkgreen"><commandLink value="j2dshop.html">J2dshop</commandLink></li>
-                        <li><commandLink  action="j2dtips.html">J2dTips</commandLink></li>
-                        <li><commandLink value="j2dservices.html"> Our Services</commandLink></li>
-                        <li>Check myClothes  |</li>
-                        <li>Sign in  |</li>
-                        <li>Help</li>
-
-                    </ul>
+	<li><a href="j2dregister.xhtml">Sign in  |</a></li>
+	<li><a href="j2dHelp.xhtml">Help</a></li>	
+	
+	</ul>
 
                     <nav class="navbar-collapse" style="background-color: slategray; height: 23px">
                         <h:selectOneMenu id="Category">
@@ -83,7 +59,7 @@
                             <f:selectItem itemValue="cleaning" itemLabel="Cleaning products"/>  
                             <f:selectItem itemValue="fumigation" itemLabel="Fumigation products"/>  
                         </h:selectOneMenu>              
-                    </nav>
+                    <p  id="promo" style="float: right; margin-top: -1px; margin-right: 45px; color:Black; font-size: 17px"><span class="fa fa-shopping-bag">Buy Products worth  $32,000.00 and get a free home cleaning</span></p></nav>
 
                 </div>
             </header>

@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 28, 2018, 9:49:36 AM
+    Author     : Francis
+*/
+
+
+		#hd>#logo {
+			text-align: center;
+		background:hsla(113,36%,14%,1.00);
+			
+		}
+		#hd > #nav > li{
+			margin-left: 70px;
+			font-size: 16px;
+			text-align: center;
+		}
+		#hd > #nav > li:hover{
+			background-color: green;
+			
+		}
+		#hd {
+			background-color: aliceblue;
+		}.col-sm-3:hover{
+			
+			border:double;
+			
+		}
+                		.dropbtnMB{
+    padding: 4px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownMB {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-contentMB {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 330px;
+	height: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+/* Links inside the dropdown */
+.dropdown-contentMB li {
+    color: black;
+    
+    display: block;
+	
+	font-size:15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-contentMB li:hover {
+	background-color: slategray;
+	}
+
+/* Show the dropdown menu on hover */
+.dropdownMB:hover .dropdown-contentMB {
+    display: block;
+	background-color:aliceblue;
+	
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdownMB:hover .dropMB {
+    
+}	
+		
+				footer{
+		padding: 20px;
+		margin-top: 20px;
+		color: aliceblue;
+		background:hsla(113,36%,14%,1.00);
+		text-align: center;
+	}

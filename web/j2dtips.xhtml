@@ -3,119 +3,176 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-      <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tips&Tricks</title>
-<link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <title>Tips&Tricks;</title>
+                <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+                    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"></link>
 
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/bootstrap.js"></script>
-	<script src="jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-	
-	</script>
-	
-	<style type="text/css">
-		#hd>#logo {
-			text-align: center;
-		background:hsla(113,36%,14%,1.00);
-			
-		}
-		#hd > #nav > li{
-			margin-left: 70px;
-			font-size: 16px;
-			text-align: center;
-		}
-		#hd > #nav > li:hover{
-			background-color: darkgreen;
-			
-		}
-		#hd {
-			
-			background-color: aliceblue;
-		}
-		#sidenav > .navbar-left{
-			background-color: darkseagreen;
-			
-			
-		}
-		
-		#sidenav > .navbar-left>.list-unstyled>:hover{
-			background-color:aliceblue;
-		}
-		
-	
-		
-				footer{
-		padding: 20px;
-		
-		color: aliceblue;
-		background:hsla(113,36%,14%,1.00);
-		text-align: center;
-	
-	}
-	</style>
-    </h:head>
-    <h:body>
-        <div class="container-fluid">
+                        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+                        <script type="text/javascript" src="js/bootstrap.js"></script>
+                        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+                        <h:outputScript library="js" name="tipscript.js"/>
+                        <h:outputStylesheet library="css" name="tipstyle.css"/>
+                        </h:head>
+    
+    
+                        <h:body>
+                          <div class="container-fluid">
 
 <header>
 <div id="hd">
-	<div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style="font: italic; color: lightgreen;">just one call and your junk  disappears...like magic</h4></div>
+	<div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style=" color: lightgreen;">just one call and your junk  disappears...like magic</h4></div>
 	
-	<ul class="list-inline"  id="nav">
-	  <li><a href="j2dhome.html">Home</a></li>
-	  <li style="color: darkgreen"><a href="j2dshop.html">J2dshop</a></li>
-	<li><a href="j2dtips.html">J2dTips</a></li>
-	<li><a href="j2dservices.html"> Our Services</a></li>
-	<li>Check myClothes  |</li>
-	<li>Sign in  |</li>
-	<li>Help</li>	
+	<ul style="display: inline" class="list-inline"  id="nav">
+	  <li><a href="index.xhtml">Home</a></li>
+	  <li><a href="j2dshop.xhtml">J2dshop</a></li>
+	<li><a href="j2dtips.xhtml"  style="background-color: cadetblue">J2dTips</a></li>
+	<div class="dropdownMB" style="padding-left: 43px">
+            <li class="dropMB"><a href="#">Our Services</a></li>
+			<div class="dropdown-contentMB dropdown-header">
+			<ul style="line-height: 19px;">
+				<li><a href="j2dserv-laundry.xhtml">Laundry and dry cleaning Services</a></li><br/>
+				<li><a href="waste and janitor.xhtml">Waste Disposal and janitorial Serviices</a></li><br/>
+				<li><a href="fumigate and pest.xhtml">Fumigation and Pest Control</a></li><br/>
+				<li><a href="#">Integrated Facilities Management</a></li><br/>
+				<li><a href="#">Landscape Maintenance</a></li><br/>
+				<li><a href="#">Equipment/Trucks/compactor Leasing </a></li><br/>
+			</ul>
+			</div>
+			</div>
+	
+        <li class="dropMB"><a href="j2dserv-laundry.xhtml">Check myClothes  </a>|</li>
+	
+
+	<li><a href="j2dregister.xhtml">Sign in  |</a></li>
+	<li><a href="j2dHelp.xhtml">Help</a></li>	
+	
 	</ul>
-	
+		
 </div>
 </header>
 
 <section>
 <div id="sidenav">
-	<nav class="navbar-left" data-spy="affix" data-offset-top="6905">
-		<ul class="list-unstyled">
-			<li style="font: italic"><u><strong>Washing TIps</strong></u></li>
-			<li>remove blood from white</li><br>
-			<li>remove blood from colored clothes</li><br>
-			<li>remove ink from white</li><br>
-			<li>remove rust from clothes(general)</li><br>
-			<li>remove oil from clothes(general)</li><br>
-			<li>remove gum from clothes(general)</li><br>
-			<li>remove  </li><br>
-			<li></li><br>
-			<li></li><br>
-			<li></li><br>
-			<li></li><br>
-			<li></li><br>
-			<li></li><br>
-			<li></li><br>
-			<li></li><br><br>
+	<nav class="col-sm-3 col-xs-3">
+		<ul class="nav navbar-nav navbar-right"
+		 data-spy="affix" data-offset-top="205">
+			<li><u><strong>TIps</strong></u></li><br/><br/>
+			<li id="1"><a href="#">remove Armpit smells/colors</a></li><br/><br/>
+			<li id="2"><a href="#">remove blood from clothes</a></li><br/><br/>
+			<li id="3"><a href="#">remove ink from clothes</a></li><br/><br/>
+			<li id="4"><a href="#">remove rust from clothes(general)</a></li><br/><br/>
+			<li id="5"><a href="#">remove oil from clothes(general)</a></li><br/><br/>
+			<li id="6"><a href="#">remove gum from clothes(general)</a></li><br/><br/>
 			
-			<li><u><strong>Cleaning tips</strong></u></li>
-			<li>remove</li>
-			<li>remove</li>
-			<li>remove</li>
-			<li>remove</li>
-			<li>remove</li>
-			<li>remove</li>
-			<li>remove</li>
-			<li>remove</li>
+			
+	
 		</ul>
 	</nav>
 	</div>
 </section>
 
+<div class="col-sm-9">
+<section id="oil">
+<h2>How to get olive oil out of a shirt?</h2>
+Blot any excess oil using a clean cloth or a paper towel. Then, squirt some aloe vera, dish soap, or<br/>
+shampoo onto the stain. Use an old toothbrush or a manicure brush to rub the stain into the fabric.<br/> 
+Let the stain sit for a few minutes.<br/>
 
+
+<h2>How to get old grease stains out of clothes?</h2>
+Use Dish Soap to Get Grease Stains Out of Your Clothes. When it comes to clothing stains,<br/> 
+grease seems to be one of the more troublesome offenders. However, dish soap can make<br/> 
+quick work of the grease, even if the stain itself is old<br/>
+
+
+<h2>How to get motor oil out of clothes?</h2>
+Work foam from the soap or detergent or shampoo into the stain. You should see it dissolve.<br/>
+Dish detergents and laundry bar soaps have special agents that fight grease, so does shampoo.<br/> 
+Rinse the area with water first, then optionally, follow with a vinegar rinse.<br/>
+
+
+<h2>How do you get truck grease out of clothes?</h2>
+Soak it in a bucket of warm water to loosen the stain then treat with Dawn on both sides of the fabric,<br/>
+rub in to the stain and let sit about 15 minutes. Put clean warm water in the bucket and let soak again.<br/>
+Repeat until stain is gone. If the stain is still lightly there use Fels Naptha Soap, rub into stain and launder.<br/>
 	
+</section>
 
-	</div>
-    </h:body>
-</html>
+
+<section id="rust">
+<h2>how to remove rust stain</h2>
+If you've got rust on clothing it can be removed with either white vinegar or lemon juice.<br/>
+Lay the clothing or fabric out on an old towel and pour a small amount of white vinegar directly<br/>
+on the stain - or rub a cut lemon half on the stain.<br/>
+Saturate it thoroughly, then blot it with a clean white towel.<br/>
+
+<h3>method 2</h3>
+Moisten a soft cloth or cotton ball with white vinegar.<br/>
+Blot the stained area to moisten it completely.<br/>
+Cover the stain with a thin layer of salt.<br/>
+Rub the vinegar and salt together onto the stain with your fingers.<br/>
+If possible, lay the piece on top of a towel in direct sunlight.<br/>
+</section>
+
+<section id="gum">
+<h2>How to get gum off clothes</h2>
+Cover the area affected by gum in liquid laundry soap.<br/>
+Use a toothbrush to work the laundry soap into the gum. This will break it up.<br/>
+Use a blunt knife and gently scrape away at the gum.<br/>
+Lastly, use your fingernail to scrape the remaining gum off the fabric.<br/>
+Throw the garment in the washing machine.<br/>
+
+
+</section>
+	
+<section id="ink">
+
+<h2>how to remove ink</h2>
+
+make a baking soda paste (two parts baking soda to 1 part water) is also a good trick to help lift blood stains.<br/>
+Apply the poultice directly to the stain and leave it for up to 30 minutes. After you've removed the paste,<br/>
+carefully blot the area with a damp cloth or paper towel then wash as normal.<br/>
+</section>
+
+<section id="blood">
+
+<h2>how to remove blood stains</h2>
+Again, start by blotting the stain to remove excess ink. You’ll need a microfibre cloth rather than paper towels,<br/>
+because bits of paper can get caught in the garment.Apply an aerosol hairspray or some rubbing alcohol directly onto the stain.<br/>
+The products contain alcohol, which can be really effective in breaking down the oil in this type of stain.Antibacterial hand<br/> 
+wash can also do the same job. Just make sure you wear protective clothing and use them in a well-ventilated room.<br/>
+While the rubbing alcohol, hand wash, or hair spray are still wet, put the garment straight into the washing machine<br/>
+and wash it as normal. Try to wash it by itself if you can.Make sure the stain is completely gone before you air dry it.<br/>
+
+<h3>method 2</h3>
+If you’re removing ink stains that have pooled on your clothing, try to use a microfibre cloth to blot the mark – don’t wipe<br/>
+Keep blotting until the ink dries and stops transferring off.
+If it’s a huge stain, try a water-based stain remover to break it down.<br/>
+Leave it for ten minutes, following the product’s instructions.<br/>
+Grab the cloth again and blot the stain. More of the stain should disappear now that you’ve used the pre-treater.<br/>
+Put the garment into the washing machine, preferably without any other clothes. You won’t need to<br/> 
+boil your clothes – just use your usual temperature setting.<br/>
+Make sure the ink stain is gone before your dry it. If it’s still there, blot it, treat it, and put it back into the wash.<br/>				
+</section>
+
+<section id="armpit">
+
+<h2>how to get Armpit smell off</h2>
+Add a cup of vinegar or a cup of baking soda to the wash to combat odors.<br/>
+Consider using a clothesline to dry your clothes outside to get a fresh outdoors scent.<br/>
+Use half a cup of pine scented cleaner in the washer<br/>
+(the pine smell will be eliminated after a cycle in the dryer). Put musty, dry clothing in the freezer.<br/>
+
+
+<h2>How do you remove deodorant stains from clothes?</h2>
+Just pour a bit of vinegar directly onto the stain, and rub it into the fabric before placing<br/>
+the item in the wash. You can also remove deodorant stains from your washable shirts and blouses<br/>
+by gently rubbing the spot with undiluted vinegar before laundering.<br/>
+</section>
+</div>
+	</div>    
+     </h:body>
+     </html>
 

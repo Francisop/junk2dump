@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta charset="utf-8"></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <title>j2d/registration</title>
+ <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+                    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"></link>
+
+                        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+                        <script type="text/javascript" src="js/bootstrap.js"></script>
+                        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+                        <script type="text/javascript" src="regyscript.js"></script>
+                        
+                        <h:outputScript library="js" name="regyscript.js"/>
+                        <h:outputStylesheet library="css" name="regstyle.css"/>
+                        
+    
+    </h:head>
+    
+    
+    <h:body>
+<div class="container-fluid">
+
+<header>
+<div id="hd">
+	<div id="logo"><h3><span style="color: black; text-decoration: underline;">Junk</span><span style="color: darkgreen; text-decoration: underline">2dump</span></h3></div>
+	
+</div>
+</header>
+
+<section>
+
+                      
+                            
+                      
+    
+   	<div  class="col-sm-4 col-xs-12  form-group"	 style="margin-left: 443px; margin-top: 23px;">
+	  <h:form class="form-group"  style="background-color: aliceblue;border: groove; padding: 33px; z-index: 1000000; ">
+		
+              <input  id="name" class="inp input-sm" type="text" value="#{logBean.fullName}"   placeholder="Full name"/> <p id="pname" style="color: red;"></p> <br></br><br></br>
+               
+              <input id="email" class="inp input-sm" type="email" value="#{logBean.email}" placeholder="Email"/> <p id="pemail" style="color: red;"></p><br/><br/><br/>
+                       
+              <input id="phone" class="inp input-sm" type="tel" value="#{logBean.phone}" placeholder="Mobile Phone"/> <p id="pphone" style="color: red;"> </p><br/><br/><br/>
+                       
+              <input id="pass" class="inp input-sm" type="password" value="#{logBean.password}" placeholder="Password"/> <p id="ppass" style="color: red;"></p><br/><br/><br/>
+                        
+              
+			
+			  <h:commandButton  value="Submit" action="#{logBean.saveMember}"   style="width: 100%; background-color:cadetblue ; border-radius: 6px;"></h:commandButton> <br></br><br></br>
+                       
+                        <p style="font-size: 13px"><u><a href = "index.xhtml">already registered</a></u>?</p>
+		
+		</h:form>
+	</div>
+       
+           
+	
+	
+</section>
+	</div>
+	
+	
+	<footer class=""> Copyright, Junk2Dump&copy;</footer>
+
+    </h:body>
+</html>
+
