@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="j2dregister.xhtml" x="565" y="32" zoom="true"/>
+        <Node id="index.xhtml" x="328" y="32" zoom="true"/>
+        <Node id="j2dshop.xhtml" x="833" y="32" zoom="false"/>
+        <Node id="j2dtips.xhtml" x="1084" y="32" zoom="true"/>
+        <Node id="j2dserv-laundry.xhtml" x="34" y="32" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
