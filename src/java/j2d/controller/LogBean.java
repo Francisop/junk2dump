@@ -21,7 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  * @author francis
  */
-
+@Named
 @ManagedBean
 @SessionScoped
 public class LogBean implements Serializable {
@@ -38,15 +38,10 @@ public class LogBean implements Serializable {
    
    public String saveMember(){
     Members member = new Members(fullName,password, email, phone); 
-    if (member != null){
     memberService.saveMember(member);
     return "index";
-    } else {
-        
-   FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, "invalid registration", "form cannot be empty"));
-     }
-     return "member";  
-   }
+    } 
+  
    
     public String login(){
         Members mem = memberService.login(email, password);
@@ -57,7 +52,7 @@ public class LogBean implements Serializable {
             return "mem";
         }else {
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, "invalid login", "please enter correct Email and password"));
-        return "index";
+        return "";
         }
         
         
@@ -121,7 +116,7 @@ public class LogBean implements Serializable {
   }
 
   public void setPhone(String phone) {
-    this.phone =phone;
+    this.phone = phone;
   }
   
 

@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Cleaning Services</title>
+        
+      <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+        <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+
+<h:outputScript library="js" name="laundryscript.js"/>
+<h:outputStylesheet library="css" name="cleanstyle.css"/>
+        
+        <style type="text/css">
+                .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: silver;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 22px 16px 4px;
+                z-index: 34;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            #menu{
+                display: none;
+            }
+            @media only screen and (max-width: 500px) {
+              .dropdownMB > li{
+                    display: none;
+                }
+                #nav>li{
+                    display: none;
+                }
+                  #menu{
+                    display: inline-block;
+                }
+            }
+            
+        </style>
+    </h:head>
+    <h:body style="background-color: aliceblue">
+        
+        
+        
+        <div class="container-fluid">
+            
+            
+            <div id="dwm_modal">
+                
+                <div class="dwm_modal_content">
+                    <div class="dwm_modal_header">
+                        <span class="dwm_close">x</span>
+                        <h2>Dog Waste Management</h2>
+                    </div>
+                    
+                    <div class="dwm_modal_body">
+                        <h:graphicImage library="images"  name="dogwaste.jpg"/>
+                        <div>stuff about dog waste </div>
+                    </div>
+                </div> 
+            </div>
+
+            <header>
+                <div id="hd">
+                    
+                    <div id="logo"><h3><span style="color: black">Junk</span><span style="color: antiquewhite">2dump</span></h3><h4 style=" color: lightgreen;">just one call and your junk  disappears...like magic</h4>
+                                     <div class="dropdown">
+                                         <span id="menu" style="font-size: 
+                                  larger;color: #ffffff" class="fa fa-navicon"></span>
+                            <div class="dropdown-content">
+                                <ul class="list-unstyled">
+                                    <li><a href="j2dserv-laundry.xhtml">Laundry and dry cleaning Services</a></li><br/>
+                                    <li><a href="j2dserv-clean.xhtml">Waste Disposal and janitorial Services</a></li><br/>
+                                    <li><a href="fumigate and pest.xhtml">Fumigation and Pest Control</a></li><br/>
+                                    <li><a href="#">Integrated Facilities Management</a></li><br/>
+                                    <li><a href="#">Landscape Maintenance</a></li><br/>
+                                    <li><a href="#">Equipment/Trucks/compactor Leasing </a></li><br/>
+                                    <li><a href="j2dshop.xhtml">J2dshop</a></li><br/>
+                                    <li><a href="j2dtips.xhtml">J2dTips</a></li><br/>
+                                    <li><a href="j2dcheck.xhtml">Check myClothes </a></li><br/>  
+                                    <li><a href="j2dregister.xhtml">Sign in </a></li><br/>
+                                    <li><a href="j2dHelp.xhtml">Help</a></li><br/>
+                                </ul>
+                            </div>
+                    </div></div>
+
+                    <ul style="display: inline" class="list-inline"  id="nav">
+                        <li><a href="index.xhtml">Home</a></li>
+                        <li><a href="j2dshop.xhtml">J2dshop</a></li>
+                        <li><a href="j2dtips.xhtml">J2dTips</a></li>
+                        <div class="dropdownMB" style="padding-left: 43px">
+                            <li class="dropMB"  style="background-color: cadetblue">Our Services</li>
+                            <div class="dropdown-contentMB dropdown-header">
+                                <ul style="line-height: 19px;">
+                                    <li><a href="j2dserv-laundry.xhtml">Laundry and dry cleaning Services</a></li><br/>
+                                    <li><a href="j2dserv-clean.xhtml"   style="background-color: cadetblue">Waste Disposal and janitorial Serviices</a></li><br/>
+                                    <li><a href="fumigate and pest.xhtml">Fumigation and Pest Control</a></li><br/>
+                                    <li><a href="#">Integrated Facilities Management</a></li><br/>
+                                    <li><a href="#">Landscape Maintenance</a></li><br/>
+                                    <li><a href="#">Equipment/Trucks/compactor Leasing </a></li><br/>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <li><a href="j2dcheck.xhtml">Check myClothes </a>|</li> 
+                        <li><a href="j2dregister.xhtml">Sign in  |</a></li>
+                        <li><a href="j2dHelp.html">Help</a></li>	
+
+                    </ul>
+
+                </div>
+        </header>
+            
+                   <section>
+                <div class="container" style="line-height: 43px">
+                    <div class="jumbotron" style="background-color: darksalmon">
+                        <h2> J2d Cleaning services</h2>
+                        <h:graphicImage library="images"  name="cleaning.jpg" height="100%" width="100%"/>
+
+                        <h3 style="text-align: center"><u>J2D!!Your Cleaning Contractors</u></h3>
+                        <p style="background-color: rgba(164,55,57,1.00);border:4px solid black">At Junk2Dump we </p><br/>
+
+                        <h3 style="text-align: center"><u>Why hire us for your Office Cleaning Needs?</u></h3>
+                        <p style="background-color: rgba(164,55,57,1.00);border:4px solid black">
+                            At Junk2Dump we understand the need of maintaining a professional appearance for our clients in<br/>
+                            order to reflect a positive Customer Experience.<br/>
+                            We are industry aware and constantly upgrade our technique to insure the best<br/>
+                            service to our customers. When you are in need of industrial cleaning,rely on our professionals <br/>
+                            to get the job done correctly and on time....get a free Estimate and contact us now!!.</p><br/>
+
+
+
+                        <h3 style="text-align: center"><u>Stop coming home to a Second job!</u></h3>
+                        <p style="background-color: rgba(164,55,57,1.00);border:4px solid black">
+                            Invest in your free time with our Services. Get Started with an in-home estimate!<br/>
+                            Immediately.<br/>
+                            We can help you save time and focus on the things you love and the things that matter<br/>
+                            most to you, including your family and friends. Let us handle the hassle of keeping your house clean:<br/>
+                            you have better things to do! Contact us today. </p>
+                        <br/>
+                        <h3 style="text-align: center"><u>Order Cleaning Sevices we provide</u></h3>
+
+                        <br/>
+                        
+                        <div class="col-sm-4" ><img src="dogwaste.jpg"  title="dog Waste management" class="dwm_open" style="cursor: pointer"/>
+                            <p style="cursor: pointer">Dog Waste Management</p></div>
+
+                        <div class="col-sm-4"><a href="#"><h:graphicImage library="images" name="maid.jpg" width="313px" height="198px" title="Maid/Janitorial"/></a>
+                            <p>Maid/Janitorial services</p></div>
+
+
+                        <div class="col-sm-4"> <a href="#"><h:graphicImage library="images"  name="landscape main.png" title="Landscape maintainance" width="313px" height="198px"/></a>
+                            <p>Landscape Maintenance</p></div>
+
+
+
+                        <div class="col-sm-12"> <a href="#"><h:graphicImage library="images"  name="waste_disposal.jpg" title="Waste disposal" width="313px" height="198px"/></a>
+                            <p>Waste disposal</p></div>
+
+
+
+                    </div></div>
+
+            </section>
+
+
+
+            <div id="clean" class="">
+                    <h:form style="text-align: center;border: 3px solid blue">
+                        
+                        <div style="font-size: larger;font-style: italic;background: #009999"><u>Estimates Done here</u> </div><br/><br/>
+                        <label>Building type:</label><select>
+                            <option>Bongalow</option>
+                            <option>Duplex</option>
+                            <option>Duplex with boys quaters</option>
+                            <option>flat</option>
+                            <option>Office space</option>
+                        </select><br/><br/><br/>      
+
+
+                        <label>Number of rooms:</label><input id="romnum" type="number"/><br></br><br></br>
+
+                        
+                        <p id="price"></p>
+                        <input value="Estimate" id="bn" type="button" style="background-color: darksalmon"></input><br/><br/>
+                        
+                        <p> note: Prices are Subject to change on inspection of building</p>
+                        </h:form>
+
+
+                    </div>	
+
+
+       
+            
+                         <div class="col-sm-6"  style=" border: none;border-left: 3px solid #ff6600;  box-shadow: 0 4px 8px 0 
+    rgba(0,0,0,0.2),0 6px 20px 0 
+    rgba(0,0,0,0.19);">
+                <h2 style="text-align: center" id="con"><u>Contact us now</u>!!!</h2>
+                <address class="dl-horizontal">
+                    <dt>Phone</dt>
+                    <dd>- 08033098905</dd>
+
+                    <dt>Address</dt>
+                    <dd>- No. 26 Agudama Street,Dline<br/>
+                        Port-harcourt<a href="#" style="color: #000;font-size:small"><u>view location</u></a></dd>
+
+                </address>
+            </div>
+          
+
+
+
+          
+
+      
+   <hr/><br/><br/><br/>
+        <div class="col-sm-12" style="background-color: #003333;border-top: 3px solid black;bottom: -1px;position:fixed;">
+            <div id="footer" class="col-sm-3" style="color: black">Junk2Dump, Copyright&copy;2018</div>
+        <div class="col-sm-3" style="text-align: center"><h2><a href="facebook.com" style="color: darkblue" title="facebook"><span class="fa fa-facebook-official"></span></a> <a href="twitter.com" title="twitter" style="color: skyblue"><span class="fa fa-twitter-square"></span></a>  <a href="instagram.com" title="instagram"><span class="fa fa-instagram"></span></a> <a href="08033098905" style="color: green" title="whatsapp"><span class="fa fa-whatsapp"></span></a></h2></div>
+	</div>
+   <script type="text/javascript">
+      
+       $(function(){
+          $('#bn').click(function(){
+		var cleanprice = 4300;	
+	    var room_num = document.getElementById('romnum').value;
+		var price = room_num * cleanprice;
+		if (room_num.length === 0 || room_num.length === "") {
+	  $('#price').text("Price: 0 ");
+	}else {
+            $('#price').text("Price: " + price);  
+	}
+			});
+                        
+       });
+       
+   </script>
+ 
+        </div>
+    </h:body>
+</html>
+

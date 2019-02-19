@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+   <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Userprofile</title>
+<link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>
+</h:head>
+
+	<h:body><h:form>
+	<div class="center-block" style="text-align: center; font-size: 34px; background:darkgreen">
+		Check the Status of your clothes<img src="dsd.jpg"/>
+	</div><br/><br/><br/>
+	<div style="text-align: center;font-size: 23px;text-decoration: underline">
+		Enter your Details
+	</div><br/>
+	<div style="text-align: center">
+            
+            <h:message for="mit"/>
+            <h:outputLabel for="em"  value="E-mail :" />&nbsp;&nbsp;<h:inputText  value="#{logBean.email}"  onkeyup="validate_email()" id="em"/><br/><br/><br/>
+            <h:outputLabel for="pa"  value="password :" />&nbsp;&nbsp;<h:inputText value="#{logBean.password}" id="pa" /><br/><br/><br/>
+            <h:commandButton action="#{logBean.login()}" id="mit"  value="submit"/><a href="j2dregister.xhtml" style="text-decoration: underline;font-size: 11px">dont have an Account</a>
+           
+	</div>
+	
+        
+        
+        <script type="text/javascript">
+            var email = document.getElementById('em').value;
+            var pass = document.getElementById('pa').value;
+              $(function (){
+                  
+            $('#em').blur(function (){
+                if (email.length === 0){
+                    alert("E-mail cannot be empty");
+                }
+            });   
+               
+           });
+           
+        </script> </h:form>
+	</h:body>
+</html>
+

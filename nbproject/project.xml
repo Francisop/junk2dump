@@ -3,7 +3,7 @@
     <type>org.netbeans.modules.web.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/web-project/3">
-            <name>Junk2dump</name>
+            <name>$Junk2dump</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
                 <library dirs="200">
@@ -19,7 +19,7 @@
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
-                    <file>${file.reference.mysql-connector-java-5.1.46-bin.jar}</file>
+                    <file>${file.reference.mysql-connector-java-5.1.23-bin.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
             </web-module-libraries>
@@ -32,10 +32,8 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
-            <word>charset</word>
-            <word>Fullname</word>
-            <word>microfibre</word>
-            <word>vera</word>
+            <word>fumigating</word>
+            <word>stakeholders</word>
         </spellchecker-wordlist>
         <spring-data xmlns="http://www.netbeans.org/ns/spring-data/1">
             <config-files>
